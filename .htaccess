@@ -1,0 +1,15 @@
+#Fichier .htaccess : /Agenda/
+
+#Empêche de lister les répertoires
+Options -Indexes
+
+#Activation de la réécriture d'url
+Options +FollowSymlinks
+RewriteEngine on
+
+#Règles de réécriture
+RewriteRule ^index.php$ index.php [L]
+RewriteRule ^ajax\.([a-z]+)\.php js/$1.php [L]
+RewriteRule ^([a-z]+)\.php$ index.php?m=$1 [L]
+RewriteRule ^([a-z]+)\.(css|js)$ $2/$1.$2 [L]
+RewriteRule ^([a-z_]+)\.(png|jpg)$ pics/$1.$2 [L]

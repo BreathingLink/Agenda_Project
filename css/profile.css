@@ -1,0 +1,85 @@
+/**/
+body {
+    display: flex;
+}
+/**/
+body > * {
+    align-items: stretch;
+}
+/**/
+#profile {
+    width: 250px;
+    box-shadow: 3px 0 2px black;
+}
+/**/
+#profile ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+/**/
+#profile .infos {
+    line-height: 1em;
+}
+/**/
+#profile .infos img {
+    float: left;
+    margin-right: 5px;
+    height: 3em;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 93%);
+}
+/**/
+#profile .pseudo {
+    display: inline-block;
+    margin-top: 0.3em;
+    font-size: 20px;
+    font-weight: bold;
+}
+/**/
+#profile .infos + li {
+    clear: left;
+}
+/**/
+#profile .sent, #profile .received {
+    margin-left: 5px;
+    padding: 0.1em 0.3em;
+    font-size: 16px;
+    border-radius: 0.6em;
+}
+/**/
+#profile .received {
+    background-color: hsl(0, 0%, 85%);
+}
+/**/
+#profile .sent {
+    background-color: hsl(0, 0%, 70%);
+}
+/**/
+#addEvent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(120, 70%, 60%);
+    padding: 10px;
+    height: 120px;
+    border-radius: 20px 8px;
+}
+/**/
+#addEvent input {
+    padding: 2px;
+    border: 0;
+    border-radius: 5px 2px;
+}
+/**/
+#addEvent input[type="submit"] {
+    font-weight: bold;
+    color: white;
+    background-color: hsl(120, 70%, 40%);
+}
+/**/
+#addEvent div {
+    display: flex;
+    justify-content: space-between;
+}
+/**/

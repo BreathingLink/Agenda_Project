@@ -1,0 +1,32 @@
+/*
+ *  Style commun à toutes les pages
+ */
+ html {
+    height: 100%;
+ }
+ /**/
+ body {
+    min-height: 100%;
+ }
+ /**/
+ body {
+    margin: 0;
+ }
+ /**/
+ body > * {
+    padding: 10px;
+ }
+ /**/
+ a {
+    color: hsl(120, 70%, 35%);
+ }
+ /**/
+ #errors {
+    padding: .7em;
+    color: hsl(0, 75%, 30%);
+    border: 2px solid hsl(0, 75%, 40%);
+    background-color: hsl(0, 75%, 30%);
+    font-weight: bold;
+    list-style-type: none;
+ }
+ /**/

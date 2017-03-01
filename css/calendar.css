@@ -1,0 +1,60 @@
+/**/
+#calendar {
+    position: relative;
+    flex: 1;
+    padding: 0;
+}
+/**/
+#calendar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    list-style-type: none;
+}
+/**/
+#calendar .hours {
+    flex-direction: column;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    font-weight: bold;
+}
+#calendar .hours li {
+    flex: 1;
+    padding-left: 15px;
+    border-bottom: 1px solid black;
+}
+/**/
+#calendar .hours li:first-child {
+    border-top: 1px solid black;
+}
+/**/
+#calendar .days {
+    margin-left: 70px;
+    border-left: 1px solid black;
+}
+/**/
+#calendar .days li {
+    flex: 1;
+    position: relative;
+    border-right: 1px solid black;
+}
+#calendar header {
+    height: 4%;
+    font-weight: bold;
+    text-align: center;
+}
+/**/
+#calendar .event {
+    position: absolute;
+    padding: 5%;
+    width: 90%;
+    background-color: hsl(120, 70%, 40%);
+    font-size: 12px;
+}
+/**/
+#calendar .event h3, #calendar .event p {
+    margin: 0;
+}
+/**/
